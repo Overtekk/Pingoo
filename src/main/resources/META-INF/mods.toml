@@ -42,7 +42,7 @@ authors="Overtek" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This mod add pinguins because everyone like penguins. They are cute, adorable and you should have penguins in your life.
+This mod add penguins because everyone like penguins. They are cute, adorable and you should have penguins in your life.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.pingoo]] #optional
