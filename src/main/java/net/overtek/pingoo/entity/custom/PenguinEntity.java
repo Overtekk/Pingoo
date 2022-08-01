@@ -19,6 +19,7 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
@@ -36,6 +37,7 @@ public class PenguinEntity extends Animal implements IAnimatable {
                 .add(Attributes.ATTACK_DAMAGE, 3.0f)
                 .add(Attributes.ATTACK_SPEED, 2.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.2f).build();
+
     }
 
     protected void registerGoals() {
@@ -65,7 +67,9 @@ public class PenguinEntity extends Animal implements IAnimatable {
 
     @Override
     public void registerControllers(AnimationData data) {
-        
+        data.addAnimationController(new AnimationController(this, "controller",
+                0, this::predicate));
+
     }
 
     @Override

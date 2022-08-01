@@ -1,7 +1,6 @@
 package net.overtek.pingoo;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
